@@ -1,4 +1,4 @@
-/* ПРАВИЛО ДИЗАЙНА: кнопки ВСЕГДА золотые и С ЗАЛИВКОЙ (все, включая второстепенные): градиент #E8CBA8→#B98A5E, тёмный текст, hover светлее. Остальное — белое, бронза только тонким акцентом. Главная — только компактные тизеры, полный контент на отдельных страницах. */
+/* ПРАВИЛО ДИЗАЙНА: кнопки ВСЕГДА золотые, никогда не белые. ЗАЛИВКА (градиент #E8CBA8→#B98A5E, тёмный текст) — только ключевые действия: «Записаться на пробное», «Оплатить по СБП», главная кнопка в hero, отправка формы. Все остальные (.btn.o: Купить абонемент, Подробнее, Все статьи, Смотреть фото, Все вопросы, Оплатить картой и т.п.) — золотая рамка + золотой текст. Остальное — белое, бронза только тонким акцентом. Главная — только компактные тизеры. */
 :root{--g1:#e8cba8;--g2:#b98a5e;--g3:#7a5536;--line:rgba(168,128,92,.75)}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Exo 2',system-ui,sans-serif;color:#e9e2d6;line-height:1.5;background:#0a0908;
@@ -102,3 +102,7 @@ section.tz{padding:28px 0}
 .tgf svg{width:20px;height:20px;fill:none;stroke:#120d07;stroke-width:1.6;stroke-linejoin:round}
 @media(max-width:600px){.tgf{padding:12px}.tgf{font-size:0;gap:0}}
 .fl a{color:#fff}
+.btn.o{background:transparent;color:#E8CBA8;border:1px solid #B98A5E}.btn.o:hover{background:rgba(232,203,168,.12);color:#f2dcc0}
+.tile .btn.o{background:rgba(0,0,0,.35)}
+.gcov{height:auto;background:#000;display:flex;justify-content:center}.gcov img{max-width:100%;max-height:420px;display:block}
+.gcov{background:none;border:0;gap:12px}.gcov img{height:320px;width:auto;max-height:none;border-radius:12px;border:1px solid var(--wl)}@media(max-width:700px){.gcov img{height:200px}.gcov{overflow-x:auto;justify-content:flex-start}}
