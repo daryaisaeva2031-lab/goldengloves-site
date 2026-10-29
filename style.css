@@ -1,3 +1,4 @@
+/* ПРАВИЛО ДИЗАЙНА: кнопки ВСЕГДА золотые (основные — градиент #E8CBA8→#B98A5E с тёмным текстом; второстепенные — золотая рамка и золотой текст). Остальное — белое, бронза только акцентом. */
 :root{--g1:#e8cba8;--g2:#b98a5e;--g3:#7a5536;--line:rgba(168,128,92,.75)}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Exo 2',system-ui,sans-serif;color:#e9e2d6;line-height:1.5;background:#0a0908;
@@ -74,3 +75,4 @@ a{color:#fff}
 .hero img{box-shadow:0 0 50px rgba(255,255,255,.08)}
 nav a.act{color:var(--g1);border-bottom:1px solid var(--g2)}
 .hero h1 .gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.btn{background:linear-gradient(180deg,#E8CBA8,#B98A5E);color:#120d07;border:0}.btn:hover{background:linear-gradient(180deg,#f2dcc0,#c99c70)}.btn.o{background:transparent;color:#E8CBA8;border:1px solid #B98A5E}.btn.o:hover{background:rgba(232,203,168,.1);color:#f2dcc0}
