@@ -9,7 +9,16 @@
 <label>Телефон<input type="tel" name="phone" required placeholder="8 9__ ___-__-__" autocomplete="tel"></label>
 <label class="c"><input type="checkbox" required> <span>Согласен с <a href="oferta.html" target="_blank">договором-офертой</a></span></label>
 <label class="c"><input type="checkbox" required> <span>Даю <a href="consent.html" target="_blank">согласие на обработку персональных данных</a></span></label>
-<div class="btns paybtns"><button class="btn" type="submit" value="sbp">Оплатить по СБП</button><button class="btn o" type="submit" value="bank_card">Оплатить картой</button></div>
+<div class="paybtns"><button class="btn sbp" type="submit" value="sbp"><svg class="sbpi" viewBox="0 0 283 326" aria-hidden="true">
+<path d="M82.0718 157.97L39.5004 182.506L0 250.881L161.133 157.97H82.0718Z" fill="#874691"/>
+<path d="M203.704 92.9109L161.133 117.447L121.632 185.822L282.705 92.9109H203.704Z" fill="#DA1844"/>
+<path d="M161.133 68.3752L121.632 0V140.178V185.822V326L161.133 257.625V68.3752Z" fill="#F9B229"/>
+<path d="M121.632 0L161.133 68.3752L203.704 92.9109H282.705L121.632 0Z" fill="#F07F1A"/>
+<path d="M121.632 140.178V326L161.133 257.625V208.493L121.632 140.178Z" fill="#72B22C"/>
+<path d="M203.704 233.089L161.133 257.625L121.632 326L282.705 233.089H203.704Z" fill="#00743E"/>
+<path d="M0 70.059V255.881L39.5004 187.506V138.434L0 70.059Z" fill="#5F5A94"/>
+<path d="M121.632 140.178V140.238L0 70.059L39.5004 138.434L203.704 233.089H282.705L121.632 140.178Z" fill="#0D90CD"/>
+</svg><span>Оплатить по СБП</span></button><button class="btn dk" type="submit" value="other">Оплатить другим способом</button></div>
 <p class="note">Номер заказа — ваш номер телефона. Оплата проходит через ЮKassa.</p>
 </form></div><p class="ctr"><a class="btn o" href="prices.html">← Все тренировки</a></p></div></section>
 <script>
@@ -18,7 +27,7 @@ const q=new URLSearchParams(location.search).get('o');if(q&&o.querySelector('opt
 const upd=()=>{const s=o.selectedOptions[0];sum.textContent='К оплате: '+(+s.dataset.p).toLocaleString('ru')+' ₽'};o.onchange=upd;upd();
 f.onsubmit=e=>{e.preventDefault();const m=e.submitter?e.submitter.value:'sbp',s=o.selectedOptions[0];
 const order=(f.phone.value.match(/\d/g)||[]).join('');// номер заказа = цифры телефона
-// TODO ЮKassa: создать платёж на сервере (amount=s.dataset.p, payment_method_data.type=m: 'sbp' | 'bank_card', metadata: имя, телефон, позиция) и перейти на confirmation_url
+// TODO ЮKassa: создать платёж на сервере (amount=s.dataset.p, payment_method_data.type='sbp' для СБП; для «другим способом» — без payment_method_data, выбор способа на странице ЮKassa, metadata: имя, телефон, позиция) и перейти на confirmation_url
 alert('Тест. Заказ №'+order+'. '+s.dataset.n+'. Здесь будет переход к оплате ЮKassa ('+m+')')};
 </script>
 <footer><div class="w"><p class="fl"><a href="about.html">О клубе</a> · <a href="why.html">Почему мы</a> · <a href="promo.html">Акции</a> · <a href="certificate.html">Подарочный сертификат</a> · <a href="faq.html">Частые вопросы</a> · <a href="start.html">Как начать</a></p><p>© 2026 Боксёрский клуб «Золотые перчатки», Пермь · Екатерининская, 105 · <a href="tel:89125962133">8 912 596-21-33</a></p><p>ИП Исаев Кирилл Игоревич · ИНН 143321367396 · ОГРНИП 325595800120306</p>

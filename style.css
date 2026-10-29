@@ -128,3 +128,7 @@ summary.tgf{list-style:none;cursor:pointer}summary.tgf::-webkit-details-marker{d
 #pay label{display:block;margin-bottom:4px}#pay select,#pay input[type=text],#pay input[type=tel]{width:100%;box-sizing:border-box;padding:12px;margin:4px 0 12px;background:#1a1816;color:#fff;border:1px solid var(--g3);border-radius:8px;font-size:16px}
 #pay label.c{display:flex;gap:8px;font-size:14px;margin-bottom:10px}.psum{font:22px 'Russo One';color:var(--g1);margin:0 0 14px}
 #pay .paybtns{margin-top:16px}#pay .note{font-size:13px;opacity:.7;margin:14px 0 0;text-align:center}
+#pay .paybtns{display:flex;flex-direction:column;gap:12px;margin-top:18px}
+#pay .paybtns .btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;font-size:15px}
+#pay .btn.sbp .sbpi{width:20px;height:23px;flex:none;background:#fff;border-radius:6px;padding:3px 4px;box-sizing:content-box}
+#pay .btn.dk{background:#141210;color:#e9e2d6;border:1px solid var(--g2)}#pay .btn.dk:hover{color:var(--g1)}
