@@ -113,3 +113,5 @@ summary.tgf{list-style:none;cursor:pointer}summary.tgf::-webkit-details-marker{d
 .tile .btn.o{background:rgba(0,0,0,.35)}
 .gcov{height:auto;background:#000;display:flex;justify-content:center}.gcov img{max-width:100%;max-height:420px;display:block}
 .gcov{background:none;border:0;gap:12px}.gcov img{height:320px;width:auto;max-height:none;border-radius:12px;border:1px solid var(--wl)}@media(max-width:700px){.gcov img{height:200px}.gcov{overflow-x:auto;justify-content:flex-start}}
+.btns{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.ctr{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
