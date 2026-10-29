@@ -1,4 +1,4 @@
-/* ПРАВИЛО ДИЗАЙНА: кнопки ВСЕГДА золотые (основные — градиент #E8CBA8→#B98A5E с тёмным текстом; второстепенные — золотая рамка и золотой текст). Остальное — белое, бронза только акцентом. */
+/* ПРАВИЛО ДИЗАЙНА: кнопки ВСЕГДА золотые и С ЗАЛИВКОЙ (все, включая второстепенные): градиент #E8CBA8→#B98A5E, тёмный текст, hover светлее. Остальное — белое, бронза только тонким акцентом. Главная — только компактные тизеры, полный контент на отдельных страницах. */
 :root{--g1:#e8cba8;--g2:#b98a5e;--g3:#7a5536;--line:rgba(168,128,92,.75)}
 *{box-sizing:border-box}
 body{margin:0;font-family:'Exo 2',system-ui,sans-serif;color:#e9e2d6;line-height:1.5;background:#0a0908;
@@ -76,3 +76,29 @@ a{color:#fff}
 nav a.act{color:var(--g1);border-bottom:1px solid var(--g2)}
 .hero h1 .gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .btn{background:linear-gradient(180deg,#E8CBA8,#B98A5E);color:#120d07;border:0}.btn:hover{background:linear-gradient(180deg,#f2dcc0,#c99c70)}.btn.o{background:transparent;color:#E8CBA8;border:1px solid #B98A5E}.btn.o:hover{background:rgba(232,203,168,.1);color:#f2dcc0}
+.btn,.btn.o{background:linear-gradient(180deg,#E8CBA8,#B98A5E);color:#120d07;border:0}.btn:hover,.btn.o:hover{background:linear-gradient(180deg,#f2dcc0,#c99c70);color:#120d07}
+.btn.sm{padding:6px 12px;font-size:12px}
+.ctr{text-align:center;margin-top:20px}.tl{text-align:center;margin:-12px 0 0;opacity:.85}
+section.tz{padding:28px 0}
+.lic{width:40px;height:40px;fill:none;stroke:var(--g2);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.ph .lic{width:46px;height:46px}
+@media(min-width:700px){.g3{grid-template-columns:repeat(3,1fr)}}
+.tiles{grid-template-columns:repeat(4,1fr)}@media(max-width:800px){.tiles{grid-template-columns:repeat(2,1fr)}}
+.tile{position:relative;display:flex;flex-direction:column;gap:6px;align-items:flex-start;min-height:210px;padding:16px;border-radius:16px;border:1px solid var(--wl);background-size:cover;background-position:center;text-decoration:none;color:#fff;overflow:hidden;isolation:isolate}
+.tile::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.85))}
+.tile b{font:20px 'Russo One';text-transform:uppercase}.tile small{opacity:.85;font-size:13px;line-height:1.3}.tile .btn{margin-top:auto}
+.hs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}@media(max-width:800px){.hs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}.hs .acard{flex:0 0 78%;scroll-snap-align:start}}
+.acard{padding:0;overflow:hidden;text-decoration:none;color:#fff;display:flex;flex-direction:column}.aimg{aspect-ratio:16/9;background-size:cover;background-position:center}
+.ab{padding:14px;display:flex;flex-direction:column;gap:6px}.ab b{font-size:17px;line-height:1.3}.ab small{opacity:.6}
+.rub{color:var(--g1);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.banner2{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.banner2>div{flex:1 1 200px}.banner2 h3{margin:0}.banner2 p{margin:4px 0 0;opacity:.8}
+.banner{margin-bottom:18px}
+.gcov{display:block;height:260px;border-radius:16px;border:1px solid var(--wl);background-size:cover;background-position:center 30%}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}.phd{aspect-ratio:4/3;border:1px dashed var(--wl);border-radius:12px;display:grid;place-items:center;opacity:.7}
+.faq{margin-bottom:10px;padding:16px 20px}.faq summary{cursor:pointer;font-weight:600;color:#fff}.faq summary::marker{color:var(--g2)}.faq p{margin:10px 0 0}
+.art{max-width:780px}.art p{font-size:17px}.art .lead{font-size:19px;text-align:center}.ah{font-size:clamp(26px,4vw,40px);color:#fff;text-align:center}.art .rub{text-align:center;display:block}.cov{width:100%;border-radius:16px;margin:10px 0 20px}.ul{padding-left:20px}.ul li{list-style:disc;margin:6px 0}
+.step .big,.feat .big{font:34px 'Russo One';color:var(--g1)}
+.tgf{position:fixed;right:18px;bottom:18px;z-index:20;display:flex;align-items:center;gap:8px;padding:12px 16px;border-radius:30px;background:linear-gradient(180deg,#E8CBA8,#B98A5E);color:#120d07;text-decoration:none;font:14px 'Russo One';text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.6)}
+.tgf svg{width:20px;height:20px;fill:none;stroke:#120d07;stroke-width:1.6;stroke-linejoin:round}
+@media(max-width:600px){.tgf{padding:12px}.tgf{font-size:0;gap:0}}
+.fl a{color:#fff}
