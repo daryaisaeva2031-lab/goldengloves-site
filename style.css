@@ -45,3 +45,12 @@ form.trial label{display:block;margin-bottom:12px}form.trial input,form.trial se
 .ok{text-align:center;font-size:22px;color:var(--g1);display:none}
 .test{background:#2a2018;color:var(--g1);text-align:center;font-size:13px;padding:4px}
 input,select,textarea{font-family:inherit}
+
+body.bg{background:#0a0908}
+body.bg::before{content:"";position:fixed;inset:0;z-index:-2;background-size:cover;background-position:center}
+body.bg::after{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(5,5,5,.55),rgba(5,5,5,.78))}
+.bg-ring::before{background-image:url(img/bg_ring.svg)}.bg-gloves::before{background-image:url(img/bg_gloves.svg);background-position:25% center}.bg-corner::before{background-image:url(img/bg_corner.svg)}.bg-weights::before{background-image:url(img/bg_weights.svg);background-position:30% center}.bg-lockers::before{background-image:url(img/bg_lockers.svg);background-position:20% center}
+.ph{text-align:center;margin:10px 0 28px}.ph svg{width:46px;height:46px;fill:none;stroke:var(--g2);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.ph h2{color:#fff;-webkit-text-fill-color:#fff;background:none;text-transform:uppercase;letter-spacing:.14em;margin:8px 0 10px;text-shadow:0 2px 12px #000}
+.ph i{display:block;width:60px;height:2px;margin:auto;background:var(--g2)}
+.card{background:rgba(10,9,8,.72);backdrop-filter:blur(3px)}
