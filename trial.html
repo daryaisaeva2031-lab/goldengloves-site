@@ -1,0 +1,17 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Пробное занятие — Боксёрский клуб «Золотые перчатки», Пермь</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Russo+One&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><link rel="icon" href="img/logo.svg"></head><body>
+<div class="test">Тестовая версия сайта</div>
+<header><div class="w" style="position:relative"><a class="brand" href="index.html"><img src="img/logo.svg" alt="Логотип"><b class="gold">Золотые перчатки</b></a><button class="burger" aria-label="Меню" onclick="document.querySelector('nav').classList.toggle('open')">☰</button><nav><a href="index.html">Главная</a><a href="schedule.html">Расписание</a><a href="prices.html">Цены</a><a href="trainers.html">Тренеры</a><a href="about.html">О клубе</a><a href="contacts.html">Контакты</a><a href="trial.html" class=act>Пробное</a></nav></div></header>
+<section><div class="w" style="max-width:560px"><h2 class="gold">Пробное занятие — бесплатно</h2><div class="card">
+<form class="trial" id="tf"><label>Имя<input name="name" required></label><label>Телефон<input name="phone" type="tel" required placeholder="8 9__ ___-__-__"></label>
+<div class="radio" style="margin-bottom:12px"><label><input type="radio" name="who" value="Взрослый" checked> Взрослый</label><label><input type="radio" name="who" value="Ребёнок"> Ребёнок</label></div>
+<label id="age" style="display:none">Возраст ребёнка<input name="age" type="number" min="4" max="17"></label>
+<label>Удобный день и время<select name="slot"><option>Взрослые: Пн/Ср/Пт 08:00 (по записи)</option><option>Взрослые: Пн/Ср/Пт 20:00</option><option>Взрослые: Вт/Чт 20:30</option><option>Взрослые: Сб 18:00 кроссфит</option><option>Дети: Пн/Ср/Пт 09:00</option><option>Дети: Пн/Ср/Пт 18:00</option><option>Дети: Вт/Чт 19:00</option><option>Дети: Сб 18:00 кроссфит</option></select></label>
+<label class="c" style="display:flex;gap:8px;font-size:14px"><input type="checkbox" required style="width:auto"> <span><a href="consent.html" target="_blank">Согласие на обработку персональных данных</a></span></label>
+<button class="btn" type="submit">Записаться</button></form><p class="ok" id="ok">Спасибо, мы свяжемся для подтверждения</p></div></div></section>
+<footer><div class="w"><p>© 2026 Боксёрский клуб «Золотые перчатки», Пермь · Екатерининская, 105 · <a href="tel:89125962133">8 912 596-21-33</a></p><p>ИП <span class="todo">[уточнить ФИО]</span> · ИНН <span class="todo">[уточнить]</span> · ОГРНИП <span class="todo">[уточнить]</span></p>
+<p><a href="oferta.html">Договор-оферта</a> · <a href="privacy.html">Политика конфиденциальности</a> · <a href="consent.html">Согласие на обработку ПД</a> · <a href="refund.html">Правила возврата</a></p></div></footer><script>
+tf.who.forEach(r=>r.onchange=()=>{const k=tf.who.value=='Ребёнок';age.style.display=k?'block':'none';tf.age.required=k});
+tf.onsubmit=e=>{e.preventDefault();
+// TODO: отправка заявки на сервер → Telegram + Google-таблица (будет подключено позже)
+tf.style.display='none';ok.style.display='block'};</script></body></html>
