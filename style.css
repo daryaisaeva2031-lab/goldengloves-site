@@ -1,6 +1,6 @@
 :root{--g1:#f3d9a4;--g2:#c8924f;--g3:#8a5a2b;--line:rgba(200,146,79,.65)}
 *{box-sizing:border-box}
-body{margin:0;font-family:'Oswald',system-ui,sans-serif;color:#e9e2d6;line-height:1.5;background:#0a0908;
+body{margin:0;font-family:'Exo 2',system-ui,sans-serif;color:#e9e2d6;line-height:1.5;background:#0a0908;
 background-image:radial-gradient(ellipse 30% 6% at 15% 0,rgba(255,240,210,.35),transparent),radial-gradient(ellipse 30% 6% at 85% 0,rgba(255,240,210,.35),transparent),radial-gradient(ellipse 70% 50% at 50% 20%,#2a2520,transparent 70%),linear-gradient(#141210,#050505);background-attachment:fixed}
 a{color:var(--g1)}.w{max-width:1120px;margin:auto;padding:0 18px}
 .gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -44,3 +44,4 @@ form.trial label{display:block;margin-bottom:12px}form.trial input,form.trial se
 .radio{display:flex;gap:16px}.radio label{display:flex;gap:6px;align-items:center}.radio input{width:auto!important}
 .ok{text-align:center;font-size:22px;color:var(--g1);display:none}
 .test{background:#3a2a10;color:var(--g1);text-align:center;font-size:13px;padding:4px}
+input,select,textarea{font-family:inherit}
