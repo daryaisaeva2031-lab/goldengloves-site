@@ -133,3 +133,4 @@ summary.tgf{list-style:none;cursor:pointer}summary.tgf::-webkit-details-marker{d
 #pay .btn.sbp .sbpi{width:20px;height:23px;flex:none;background:#fff;border-radius:6px;padding:3px 4px;box-sizing:content-box}
 #pay .btn.dk{background:#141210;color:#e9e2d6;border:1px solid var(--g2)}#pay .btn.dk:hover{color:var(--g1)}
 #pay .hint{display:block;margin:-8px 0 12px;font-size:13px;color:#a89f90;font-weight:400}
+.trialcta{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:24px;text-align:center}.trialcta .tl{margin:0}
