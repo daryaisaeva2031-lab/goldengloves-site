@@ -115,4 +115,3 @@ summary.tgf{list-style:none;cursor:pointer}summary.tgf::-webkit-details-marker{d
 .gcov{background:none;border:0;gap:12px}.gcov img{height:320px;width:auto;max-height:none;border-radius:12px;border:1px solid var(--wl)}@media(max-width:700px){.gcov img{height:200px}.gcov{overflow-x:auto;justify-content:flex-start}}
 .btns{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
 .ctr{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
-@media(max-width:600px){.btns{display:flex;flex-direction:column;align-items:center;gap:0}.btns>.btn{margin:0}.btns>.btn+.btn{margin-top:20px}}
