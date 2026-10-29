@@ -115,3 +115,16 @@ summary.tgf{list-style:none;cursor:pointer}summary.tgf::-webkit-details-marker{d
 .gcov{background:none;border:0;gap:12px}.gcov img{height:320px;width:auto;max-height:none;border-radius:12px;border:1px solid var(--wl)}@media(max-width:700px){.gcov img{height:200px}.gcov{overflow-x:auto;justify-content:flex-start}}
 .btns{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
 .ctr{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.tcat{margin:30px 0 14px;font-size:22px}.tcards{align-items:start}
+.tcard{display:flex;flex-direction:column;gap:10px}
+.tcard .th{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.tcard h4{margin:0;font:18px 'Russo One';color:#fff}.tcard .tp{font:20px 'Russo One';color:var(--g1);white-space:nowrap}
+.tcard .td p{margin:0;color:#e9e2d6;line-height:1.5}
+.tcard .more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}.tcard .more>div{overflow:hidden}.tcard .more p{padding-top:8px}
+.tcard.open .more{grid-template-rows:1fr}
+.tcard .tf{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:4px}
+.tg{background:none;border:0;color:var(--g1);cursor:pointer;display:flex;align-items:center;gap:6px;font:14px 'Exo 2';padding:6px 0}
+.tg svg{width:20px;height:20px;fill:none;stroke:var(--g1);stroke-width:2;transition:transform .35s}.tcard.open .tg svg{transform:rotate(180deg)}
+#pay label{display:block;margin-bottom:4px}#pay select,#pay input[type=text],#pay input[type=tel]{width:100%;box-sizing:border-box;padding:12px;margin:4px 0 12px;background:#1a1816;color:#fff;border:1px solid var(--g3);border-radius:8px;font-size:16px}
+#pay label.c{display:flex;gap:8px;font-size:14px;margin-bottom:10px}.psum{font:22px 'Russo One';color:var(--g1);margin:0 0 14px}
+#pay .paybtns{margin-top:16px}#pay .note{font-size:13px;opacity:.7;margin:14px 0 0;text-align:center}
