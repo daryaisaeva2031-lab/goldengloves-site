@@ -54,3 +54,23 @@ body.bg::after{content:"";position:fixed;inset:0;z-index:-1;background:linear-gr
 .ph h2{color:#fff;-webkit-text-fill-color:#fff;background:none;text-transform:uppercase;letter-spacing:.14em;margin:8px 0 10px;text-shadow:0 2px 12px #000}
 .ph i{display:block;width:60px;height:2px;margin:auto;background:var(--g2)}
 .card{background:rgba(10,9,8,.72);backdrop-filter:blur(3px)}
+
+/* white rebalance */
+:root{--wl:rgba(255,255,255,.18)}
+body{color:#ececec}
+h2.gold,h3.gold,.card .gold:not(.k){background:none;-webkit-text-fill-color:#fff;color:#fff}
+h2,h3{color:#fff}
+.hero h1.gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.card{border:1px solid var(--wl);box-shadow:none}
+.photos img,dialog{border-color:var(--wl)}
+header,footer{border-color:rgba(255,255,255,.12)}
+nav a{color:#fff}nav a.on,nav a:hover{color:var(--g1)}nav a.on{border-bottom:1px solid var(--g2)}
+.btn{background:#fff;color:#000}.btn:hover{background:#e6e6e6}
+.btn.o{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.7)}
+.plist .p,.combo .p,.sched b{color:#fff}
+.sched li,.plist li{border-bottom-color:rgba(255,255,255,.1)}
+.burger{color:#fff;border-color:rgba(255,255,255,.5)}
+a{color:#fff}
+.hero img{box-shadow:0 0 50px rgba(255,255,255,.08)}
+nav a.act{color:var(--g1);border-bottom:1px solid var(--g2)}
+.hero h1 .gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
