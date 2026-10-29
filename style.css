@@ -100,7 +100,14 @@ section.tz{padding:28px 0}
 .step .big,.feat .big{font:34px 'Russo One';color:var(--g1)}
 .tgf{position:fixed;right:18px;bottom:18px;z-index:20;display:flex;align-items:center;gap:8px;padding:12px 16px;border-radius:30px;background:linear-gradient(180deg,#E8CBA8,#B98A5E);color:#120d07;text-decoration:none;font:14px 'Russo One';text-transform:uppercase;box-shadow:0 6px 20px rgba(0,0,0,.6)}
 .tgf svg{width:20px;height:20px;fill:none;stroke:#120d07;stroke-width:1.6;stroke-linejoin:round}
-@media(max-width:600px){.tgf{padding:12px}.tgf{font-size:0;gap:0}}
+summary.tgf{list-style:none;cursor:pointer}summary.tgf::-webkit-details-marker{display:none}
+.msg[open] summary.tgf{box-shadow:0 0 0 2px rgba(232,203,168,.35),0 6px 20px rgba(0,0,0,.6)}
+.msgm{position:fixed;right:18px;bottom:76px;z-index:21;display:flex;flex-direction:column;gap:8px;padding:10px;background:rgba(10,9,8,.94);border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 24px rgba(0,0,0,.7)}
+.msgm a{display:flex;align-items:center;gap:10px;color:#e9e2d6;text-decoration:none;font-size:14px;padding:4px 10px 4px 4px;border-radius:24px}
+.msgm a:hover{background:rgba(232,203,168,.08);color:var(--g1)}
+.msgm svg{width:40px;height:40px;padding:9px;box-sizing:border-box;border-radius:50%;border:1px solid var(--g2);fill:none;stroke:var(--g1);stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+.msgm svg.vk{fill:var(--g1);stroke:none}
+@media(max-width:600px){.tgf{padding:12px}.tgf{font-size:0;gap:0}.msgm{bottom:70px;right:14px;padding:8px}.msgm span{display:none}.msgm a{padding:0}}
 .fl a{color:#fff}
 .btn.o{background:transparent;color:#E8CBA8;border:1px solid #B98A5E}.btn.o:hover{background:rgba(232,203,168,.12);color:#f2dcc0}
 .tile .btn.o{background:rgba(0,0,0,.35)}
