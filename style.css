@@ -149,3 +149,4 @@ dialog.kidm b{color:var(--g1);font-weight:600}.kidlink{font-size:13px;color:#a89
 dialog.kidm ol{list-style:none;counter-reset:k;padding:0;margin:0 0 12px}dialog.kidm ol li{counter-increment:k;padding-left:26px}
 dialog.kidm ol li:before{content:counter(k);width:auto;height:auto;background:none;border-radius:0;top:0;color:var(--g2);font-weight:700;font-size:13px}
 @media(max-width:480px){dialog.kidm{width:calc(100% - 24px);padding:18px 16px}}
+.btn.clubbtn{margin:0 0 14px}
