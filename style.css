@@ -125,7 +125,7 @@ summary.tgf{list-style:none;cursor:pointer}summary.tgf::-webkit-details-marker{d
 .tcard .tf{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:4px}
 .tg{background:none;border:0;color:var(--g1);cursor:pointer;display:flex;align-items:center;gap:6px;font:14px 'Exo 2';padding:6px 0}
 .tg svg{width:20px;height:20px;fill:none;stroke:var(--g1);stroke-width:2;transition:transform .35s}.tcard.open .tg svg{transform:rotate(180deg)}
-#pay label{display:block;margin-bottom:4px}#pay select,#pay input[type=text],#pay input[type=tel],#pay input[type=email]{width:100%;box-sizing:border-box;padding:12px;margin:4px 0 12px;background:#1a1816;color:#fff;border:1px solid var(--g3);border-radius:8px;font-size:16px}
+#pay label{display:block;margin-bottom:4px}#pay select,#pay input[type=text],#pay input[type=tel],#pay input[type=email],#pay input[type=number]{width:100%;box-sizing:border-box;padding:12px;margin:4px 0 12px;background:#1a1816;color:#fff;border:1px solid var(--g3);border-radius:8px;font-size:16px}
 #pay label.c{display:flex;gap:8px;font-size:14px;margin-bottom:10px}.psum{font:22px 'Russo One';color:var(--g1);margin:0 0 14px}
 #pay .paybtns{margin-top:16px}#pay .note{font-size:13px;opacity:.7;margin:14px 0 0;text-align:center}
 #pay .paybtns{display:flex;flex-direction:column;gap:12px;margin-top:18px}
@@ -150,3 +150,14 @@ dialog.kidm ol{list-style:none;counter-reset:k;padding:0;margin:0 0 12px}dialog.
 dialog.kidm ol li:before{content:counter(k);width:auto;height:auto;background:none;border-radius:0;top:0;color:var(--g2);font-weight:700;font-size:13px}
 @media(max-width:480px){dialog.kidm{width:calc(100% - 24px);padding:18px 16px}}
 .btn.clubbtn{margin:0 0 14px}
+
+.doc{max-width:860px}.doc p{text-align:justify;hyphens:auto;line-height:1.6;margin:0 0 10px}.doc h3{font-family:"Russo One",sans-serif;margin:22px 0 10px;font-size:18px}.doc ul{margin:0 0 10px 0;padding-left:22px;line-height:1.6;text-align:justify}.doc li{margin-bottom:6px}.doc .ed{text-align:left;opacity:.75}.doc .rq{text-align:left}
+@media(max-width:600px){.doc p,.doc ul{text-align:left}}
+.tcards{align-items:stretch;gap:20px}.tcard{height:100%;box-sizing:border-box}.tcard .th{align-items:flex-start}.tcard .tf{margin-top:auto;padding-top:6px;flex-wrap:nowrap}.tcard .tf>*:first-child{min-width:0}.tcard .tf .btn{flex-shrink:0}
+.tcard .tf:has(.todo){flex-wrap:wrap}
+.tcard .gl{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted,#9a9a9a);margin:4px 0 0;cursor:pointer}.tcard .gl input{width:14px;height:14px;margin:0;accent-color:var(--g1)}
+#glbox[hidden]{display:none!important}
+.why{background:none;border:0;padding:0;margin-left:6px;font:inherit;font-size:12px;color:var(--g1);text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer;white-space:nowrap}
+.whyd{max-width:min(360px,calc(100vw - 32px));padding:22px 22px 18px;background:#141210;color:#eee;border:1px solid var(--g3);border-radius:12px;font-size:14px;line-height:1.5}
+.whyd::backdrop{background:rgba(0,0,0,.6)}.whyd p{margin:0}.whyd .x{position:absolute;top:6px;right:10px;background:none;border:0;color:var(--g1);font-size:22px;cursor:pointer;line-height:1}
+.tcard .gl{flex-wrap:wrap}
