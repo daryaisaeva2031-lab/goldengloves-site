@@ -181,3 +181,7 @@ dialog.kidm ol li:before{content:counter(k);width:auto;height:auto;background:no
 .camt button:hover{background:rgba(232,203,168,.12);color:#f2dcc0}
 .camt button.on{background:linear-gradient(180deg,#E8CBA8,#B98A5E);color:#120d07;border-color:transparent;box-shadow:0 0 0 2px rgba(232,203,168,.35)}
 .camt button.on:hover{background:linear-gradient(180deg,#f2dcc0,#c99c70);color:#120d07}
+.dlist{display:flex;flex-direction:column;gap:12px}.drow{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;text-decoration:none;color:#e9e2d6;transition:border-color .15s}
+.drow b{display:block;font:400 16px 'Russo One',sans-serif;color:var(--g1);margin-bottom:4px}.drow small{font-size:14px;color:rgba(233,226,214,.7)}.drow i{font-style:normal;color:var(--g2);font-size:20px}.drow:hover{border-color:var(--g2)}.drow:hover i{color:var(--g1)}
+.dsw{text-align:center;margin:0 0 24px}.dsign{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:30px;background:linear-gradient(180deg,#E8CBA8,#B98A5E);color:#120d07;text-decoration:none;font:16px 'Russo One',sans-serif;text-transform:uppercase;box-shadow:0 0 0 2px rgba(232,203,168,.35),0 6px 20px rgba(0,0,0,.6)}
+.dsign:hover{background:linear-gradient(180deg,#f2dcc0,#c99c70)}.dsign svg{width:20px;height:20px;fill:none;stroke:#120d07;stroke-width:1.6;stroke-linejoin:round}
