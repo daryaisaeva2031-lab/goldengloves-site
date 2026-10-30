@@ -185,3 +185,6 @@ dialog.kidm ol li:before{content:counter(k);width:auto;height:auto;background:no
 .drow b{display:block;font:400 16px 'Russo One',sans-serif;color:var(--g1);margin-bottom:4px}.drow small{font-size:14px;color:rgba(233,226,214,.7)}.drow i{font-style:normal;color:var(--g2);font-size:20px}.drow:hover{border-color:var(--g2)}.drow:hover i{color:var(--g1)}
 .dsw{text-align:center;margin:0 0 24px}.dsign{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:30px;background:linear-gradient(180deg,#E8CBA8,#B98A5E);color:#120d07;text-decoration:none;font:16px 'Russo One',sans-serif;text-transform:uppercase;box-shadow:0 0 0 2px rgba(232,203,168,.35),0 6px 20px rgba(0,0,0,.6)}
 .dsign:hover{background:linear-gradient(180deg,#f2dcc0,#c99c70)}.dsign svg{width:20px;height:20px;fill:none;stroke:#120d07;stroke-width:1.6;stroke-linejoin:round}
+
+/* schedule days gold */
+.sched li .gold.gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
