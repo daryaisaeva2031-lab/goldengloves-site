@@ -47,7 +47,7 @@ c.addEventListener('change',()=>kidSet(c.checked));})();</script>
 </section>
 <script>
 const o=document.getElementById('o'),f=document.getElementById('f'),sum=document.getElementById('sum');
-const q=new URLSearchParams(location.search).get('o');if(q&&o.querySelector('option[value="'+q+'"]'))o.value=q;if(new URLSearchParams(location.search).get('gl')=='1')document.getElementById('gl').checked=true;
+const q=new URLSearchParams(location.search).get('o');if(q&&o.querySelector('option[value="'+q+'"]'))o.value=q;{const u=new URLSearchParams(location.search);if(u.get('am'))document.getElementById('amount').value=u.get('am');if(u.get('p'))document.querySelector('[name=purpose]').value=u.get('p');if(u.get('em'))document.querySelector('[name=email]').value=u.get('em')}if(new URLSearchParams(location.search).get('gl')=='1')document.getElementById('gl').checked=true;
 const glb=document.getElementById('glbox'),gl=document.getElementById('gl'),glt=document.getElementById('glt');const fb=document.getElementById('freebox'),am=document.getElementById('amount');
 const price=()=>o.value=='free'?Math.floor(+am.value||0):+o.selectedOptions[0].dataset.p+(gl.checked?+(o.selectedOptions[0].dataset.gl||0):0);
 const upd=()=>{const fr=o.value=='free',gp=!!o.selectedOptions[0].dataset.gl;glb.hidden=!gp;if(gp)glt.textContent='Тренажёрный зал Green Line (+'+(+o.selectedOptions[0].dataset.gl).toLocaleString('ru')+' ₽)';if(!gp)gl.checked=false;fb.hidden=!fr;am.required=fr;sum.textContent=fr&&price()<100?'Укажите сумму не менее 100 ₽':'К оплате: '+price().toLocaleString('ru')+' ₽'};o.onchange=upd;am.oninput=upd;gl.onchange=upd;upd();

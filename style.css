@@ -161,3 +161,23 @@ dialog.kidm ol li:before{content:counter(k);width:auto;height:auto;background:no
 .whyd{max-width:min(360px,calc(100vw - 32px));padding:22px 22px 18px;background:#141210;color:#eee;border:1px solid var(--g3);border-radius:12px;font-size:14px;line-height:1.5}
 .whyd::backdrop{background:rgba(0,0,0,.6)}.whyd p{margin:0}.whyd .x{position:absolute;top:6px;right:10px;background:none;border:0;color:var(--g1);font-size:22px;cursor:pointer;line-height:1}
 .tcard .gl{flex-wrap:wrap}
+.cert label{display:block;margin:0 0 12px;font-size:14px}.cert small{color:#9a9a9a;font-size:12px}
+.cert input{display:block;width:100%;box-sizing:border-box;padding:12px;margin-top:4px;background:#1a1816;color:#fff;border:1px solid var(--g3);border-radius:8px;font:16px 'Exo 2',sans-serif}
+.camt{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 16px}.camt button{padding:14px 6px;background:#1a1816;color:#fff;border:1px solid var(--g3);border-radius:8px;font:17px 'Russo One',sans-serif;cursor:pointer}
+.cnote{font-size:13px;color:rgba(233,226,214,.7);margin:4px 0 12px}.cerr{color:#e88;font-size:14px;margin:0 0 10px}.cert .btn{width:100%}
+.cprev{display:block;width:100%;margin-top:10px;padding:10px;background:none;border:0;color:var(--g1);font:14px 'Exo 2',sans-serif;text-decoration:underline dotted;text-underline-offset:4px;cursor:pointer}
+/* Сертификат: шаблон .gcert (используется и для PDF) */
+.gcd{padding:0;border:0;background:none;max-width:min(640px,calc(100vw - 24px));width:100%;overflow:visible}.gcd::backdrop{background:rgba(0,0,0,.72)}
+.gcd .x{position:absolute;top:-38px;right:0;background:none;border:0;color:#fff;font-size:30px;line-height:1;cursor:pointer}
+.gcert{aspect-ratio:1.414/1;background:radial-gradient(ellipse at 50% 0,#141210 0,#0a0908 70%);border:1px solid var(--g2);border-radius:6px;padding:14px;box-sizing:border-box;color:#fff;font-family:'Exo 2',sans-serif}
+.gin{height:100%;box-sizing:border-box;border:1px solid rgba(232,203,168,.45);outline:1px solid rgba(232,203,168,.18);outline-offset:-7px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4% 6%}
+.gclub{font:clamp(13px,3vw,18px) 'Russo One',sans-serif;color:var(--g1);letter-spacing:3px;text-transform:uppercase;margin:0}.gsub{margin:2px 0 0;font-size:clamp(10px,2vw,12px);color:rgba(233,226,214,.7);letter-spacing:1px}
+.gh{font:clamp(20px,5.2vw,34px) 'Russo One',sans-serif;text-transform:uppercase;margin:6% 0 2%;letter-spacing:1px;color:#fff}
+.gam{font:clamp(28px,8vw,52px) 'Russo One',sans-serif;color:var(--g1);margin:0;line-height:1.1}.gto{margin:3% 0 0;font-size:clamp(13px,3vw,17px)}.gtx{margin:3% 0 0;font-size:clamp(11px,2.4vw,14px);color:#e9e2d6}
+.gft{margin-top:auto;width:100%;display:flex;justify-content:space-between;gap:10px;font-size:clamp(9px,1.9vw,12px);color:rgba(233,226,214,.7);padding-top:4%;border-top:1px solid rgba(232,203,168,.25)}.gft em{font-style:normal;opacity:.7}
+.gcd[open]{display:block}
+@media(max-width:600px){.gcert{aspect-ratio:auto}.gin{padding:22px 14px 14px}.gtx{margin-bottom:18px}.gft{flex-direction:column;align-items:center;gap:2px}}
+.camt button{background:transparent;color:var(--g1);border:1px solid var(--g2);border-radius:10px;transition:background .15s,color .15s}
+.camt button:hover{background:rgba(232,203,168,.12);color:#f2dcc0}
+.camt button.on{background:linear-gradient(180deg,#E8CBA8,#B98A5E);color:#120d07;border-color:transparent;box-shadow:0 0 0 2px rgba(232,203,168,.35)}
+.camt button.on:hover{background:linear-gradient(180deg,#f2dcc0,#c99c70);color:#120d07}
