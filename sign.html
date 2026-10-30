@@ -1,0 +1,51 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Подписание документов — «Золотые перчатки»</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Oswald:wght@400;600&family=Russo+One&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css?v=2"><link rel="icon" href="img/logo.svg"><style>label.c.sg{display:flex;gap:8px;font-size:14px;margin-bottom:10px}label.c.sg input{width:auto}</style></head><body class="bg bg-ring">
+<div class="test">Тестовая версия сайта</div>
+<header><div class="w" style="position:relative"><a class="brand" href="index.html"><img src="img/logo.svg" alt="Логотип"><b class="gold">Золотые перчатки</b></a><button class="burger" aria-label="Меню" onclick="document.querySelector('nav').classList.toggle('open')">☰</button><nav><a href="index.html">Главная</a><a href="schedule.html">Расписание</a><a href="prices.html">Тренировки</a><a href="trainers.html">Тренеры</a><a href="articles.html">Статьи</a><a href="gallery.html">Галерея</a><a href="contacts.html">Контакты</a><a href="trial.html">Пробное</a></nav></div></header>
+<section><div class="w" style="max-width:560px"><div class="ph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20v-4C4 14 4 9 6 6c2-3 8-3 10 0 2 3 1 7-2 9v5zM7 16h7M14 9c2 0 3 1 3 3"/></svg><h2>Подписание документов</h2><i></i></div><div class="card">
+<form class="trial" id="tf"><div class="radio" style="margin-bottom:12px"><label><input type="radio" name="who" value="Взрослый" checked> Взрослый</label><label><input type="radio" name="who" value="Ребёнок"> Ребёнок</label></div>
+<p class="note" style="margin:0 0 12px">Для клиентов, оплачивающих занятия в клубе. Оплата на этой странице не производится.</p>
+<small class="fhint kid-only" hidden>Укажите <b>свои</b> данные как родителя (законного представителя), ниже — данные ребёнка.</small>
+<label>Фамилия<input type="text" name="surname" required pattern="[A-Za-zА-Яа-яЁё]+(-[A-Za-zА-Яа-яЁё]+)*" minlength="2" autocomplete="family-name" data-v="фамилию"></label>
+<label>Имя<input type="text" name="name" required pattern="[A-Za-zА-Яа-яЁё]+(-[A-Za-zА-Яа-яЁё]+)*" minlength="2" autocomplete="given-name" data-v="имя"></label>
+<label>Телефон<input name="phone" type="tel" required placeholder="+7 (___) ___-__-__" inputmode="tel" data-ph="1" autocomplete="tel"></label>
+<label>Email<input type="email" name="email" required placeholder="you@mail.ru" autocomplete="email"></label>
+<input type="checkbox" id="kidchk" hidden><div class="kid kid-only" hidden>
+<label>Фамилия ребёнка<input type="text" name="child_surname" pattern="[A-Za-zА-Яа-яЁё]+(-[A-Za-zА-Яа-яЁё]+)*" minlength="2" data-kid="1"></label>
+<label>Имя ребёнка<input type="text" name="child_name" pattern="[A-Za-zА-Яа-яЁё]+(-[A-Za-zА-Яа-яЁё]+)*" minlength="2" data-kid="1"></label>
+<label>Дата рождения ребёнка<input type="date" name="child_birth" data-kid="1"></label>
+<div><button type="button" class="btn o kidbtn" onclick="kidm.showModal()">Прочитать родителям</button>
+<label class="c"><input type="checkbox" id="kidok"> <span>Я ознакомлен(а) с правилами для родителей, принимаю их и подтверждаю отсутствие у ребёнка медицинских противопоказаний</span></label></div></div>
+<label class="c sg"><input type="checkbox" required> <span>Согласен с <a href="oferta.html" target="_blank">договором-офертой</a></span></label>
+<label class="c sg"><input type="checkbox" required> <span>Даю <a href="consent.html" target="_blank">согласие на обработку персональных данных</a></span></label>
+<label class="c sg"><input type="checkbox" required> <span>Ознакомлен(а) с <a href="privacy.html" target="_blank">политикой конфиденциальности</a></span></label>
+<button class="btn" type="submit">Подписать</button></form><dialog id="kidm" class="kidm"><h3>Правила для родителей</h3><ol>
+<li><b>Возраст.</b> Принимаем детей с 5 лет.</li>
+<li><b>Медицинский допуск.</b> Для тренировок и пробного занятия справка не требуется: родитель подтверждает отсутствие у ребёнка медицинских противопоказаний к занятиям боксом.</li>
+<li><b>Срок действия.</b> Подтверждение действует бессрочно — всё время, пока ребёнок занимается в клубе.</li>
+<li><b>Изменения в здоровье.</b> Родитель обязан незамедлительно сообщить тренеру о любых изменениях в состоянии здоровья ребёнка.</li>
+<li><b>Спарринги.</b> Допуск к спаррингам — по решению тренера.</li>
+<li><b>Соревнования.</b> Для участия необходима медицинская справка о допуске.</li>
+<li><b>Ответственность.</b> Клуб отвечает за ребёнка только во время занятия. До и после занятия ответственность несёт родитель.</li>
+<li><b>Оплата.</b> Договор принимает и оплачивает родитель (законный представитель).</li>
+</ol><p class="kidlink">Подробнее — в <a href="oferta.html" target="_blank">договоре-оферте</a>, раздел 5.</p><form method="dialog"><button class="btn">Понятно</button></form></dialog>
+<script>(function(){const c=document.getElementById('kidchk'),ok=document.getElementById('kidok'),f=c.form;
+window.kidSet=function(on){c.checked=on;document.querySelectorAll('.kid-only').forEach(e=>e.hidden=!on);ok.required=on;if(!on)ok.checked=false;if(window.kidHook)kidHook(on)};
+c.addEventListener('change',()=>kidSet(c.checked));})();</script>
+<p class="ok" id="ok">Спасибо! Документы подписаны.</p></div></div></section>
+<footer><div class="w"><p class="fl"><a href="about.html">О клубе</a> · <a href="why.html">Почему мы</a> · <a href="promo.html">Акции</a> · <a href="certificate.html">Подарочный сертификат</a> · <a href="faq.html">Частые вопросы</a> · <a href="start.html">Как начать</a></p><p>© 2026 Боксёрский клуб «Золотые перчатки», Пермь · Екатерининская, 105 · <a href="tel:89125962133">8 912 596-21-33</a></p><p>ИП Исаев Кирилл Игоревич · ИНН 143321367396 · ОГРНИП 325595800120306</p>
+<p><a href="oferta.html">Договор-оферта</a> · <a href="privacy.html">Политика конфиденциальности</a> · <a href="consent.html">Согласие на обработку ПД</a> · <a href="refund.html">Правила возврата</a></p></div></footer><script>
+window.kidHook=k=>{tf.querySelectorAll('[data-kid]').forEach(i=>{i.required=k;if(!k)i.value=''})};tf.who.forEach(r=>r.onchange=()=>kidSet(tf.who.value=='Ребёнок'));
+tf.onsubmit=e=>{e.preventDefault();
+const data=Object.fromEntries(new FormData(tf));data.signed_at=new Date().toISOString();data.page='sign.html';
+// TODO: отправка на сервер → Telegram + Google-таблица (будет подключено позже), как в trial.html
+tf.style.display='none';ok.style.display='block'};</script><details class="msg"><summary class="tgf" aria-label="Написать нам"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Написать нам</summary><div class="msgm"><a href="https://t.me/goldengloves59" target="_blank" rel="noopener" title="Telegram" aria-label="Telegram"><svg viewBox="0 0 24 24"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z M9 13l9-7"/></svg><span>Telegram</span></a><a href="https://vk.me/goldenglovesperm" target="_blank" rel="noopener" title="ВКонтакте" aria-label="ВКонтакте"><svg viewBox="0 0 24 24" class="vk"><path d="M3 7h3c.5 3 2 5.5 3.5 6V7h3v3.5c1.5-.2 3-2 3.5-3.5h3c-.4 2.3-2.2 4.3-3.5 5 1.3.6 3.3 2.2 4 5h-3.3c-.6-1.7-2-3-3.7-3.2V17h-.5C7 17 3.5 13.5 3 7z"/></svg><span>ВКонтакте</span></a></div></details><script>document.querySelectorAll('input[data-v]').forEach(i=>{const c=()=>{i.value=i.value.trim();i.setCustomValidity(!/^[A-Za-zА-Яа-яЁё]{2,}(-[A-Za-zА-Яа-яЁё]+)*$/.test(i.value)?'Введите '+i.dataset.v+' полностью: минимум 2 буквы, только буквы и дефис':'')};i.addEventListener('input',()=>i.setCustomValidity(''));i.form.addEventListener('submit',c,true);i.addEventListener('invalid',c);i.addEventListener('blur',c)})</script><script>
+function phDigits(v){let d=(v||'').replace(/\D/g,'');if(d.length==10)d='7'+d;else if(d[0]=='8')d='7'+d.slice(1);return d.slice(0,11)}
+function phFmt(d){if(!d)return'';const r=d.slice(1);let o='+7';if(r.length)o+=' ('+r.slice(0,3);if(r.length>=3)o+=')';if(r.length>3)o+=' '+r.slice(3,6);if(r.length>6)o+='-'+r.slice(6,8);if(r.length>8)o+='-'+r.slice(8,10);return o}
+document.querySelectorAll('input[data-ph]').forEach(i=>{
+const chk=()=>{const d=phDigits(i.value);i.setCustomValidity(/^79\d{9}$/.test(d)?'':'Введите номер полностью: 11 цифр, например +7 (912) 596-21-33')};
+i.addEventListener('input',e=>{if(e.inputType&&e.inputType.startsWith('delete'))return;let raw=i.value.replace(/\D/g,'');if(!raw)return;let d=raw.length<=1&&(raw=='8'||raw=='7')?'7':raw.length==10&&raw[0]=='9'?'7'+raw:(raw[0]=='8'?'7'+raw.slice(1):raw[0]=='7'?raw:'7'+raw);i.value=phFmt(d.slice(0,11));i.setCustomValidity('')});
+i.addEventListener('paste',e=>{e.preventDefault();i.value=phFmt(phDigits((e.clipboardData||window.clipboardData).getData('text')));chk()});
+i.addEventListener('blur',()=>{if(i.value)i.value=phFmt(phDigits(i.value));chk()});
+i.addEventListener('invalid',chk);i.form.addEventListener('submit',chk,true)});
+</script></body></html>
