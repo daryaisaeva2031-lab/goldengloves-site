@@ -6,7 +6,7 @@
 <form class="trial" id="tf"><div class="radio" style="margin-bottom:12px"><label><input type="radio" name="who" value="Взрослый" checked> Взрослый</label><label><input type="radio" name="who" value="Ребёнок"> Ребёнок</label></div><small class="fhint kid-only" hidden>Записываете ребёнка — укажите <b>его</b> фамилию и имя.</small><label>Фамилия<input type="text" name="surname" required minlength="2" pattern="[A-Za-zА-Яа-яЁё]+(-[A-Za-zА-Яа-яЁё]+)*" autocomplete="family-name" data-v="фамилию"></label>
 <label>Имя<input type="text" name="name" required minlength="2" pattern="[A-Za-zА-Яа-яЁё]+(-[A-Za-zА-Яа-яЁё]+)*" autocomplete="given-name" data-v="имя"></label><label>Телефон<input name="phone" type="tel" required placeholder="+7 (___) ___-__-__" inputmode="tel" data-ph="1"></label>
 
-<label id="age" style="display:none">Возраст ребёнка<input name="age" type="number" min="4" max="17"></label>
+<label id="age" style="display:none">Возраст ребёнка<input name="age" type="number" min="5" max="17"></label>
 <label>Удобный день и время<select name="slot"><option>Взрослые: Пн/Ср/Пт 08:00 (по записи)</option><option>Взрослые: Пн/Ср/Пт 20:00</option><option>Взрослые: Вт/Чт 20:30</option><option>Взрослые: Сб 18:00 кроссфит</option><option>Дети: Пн/Ср/Пт 09:00</option><option>Дети: Пн/Ср/Пт 18:00</option><option>Дети: Вт/Чт 19:00</option><option>Дети: Сб 18:00 кроссфит</option></select></label>
 <div class="kid kid-only" hidden><input type="checkbox" id="kidchk" hidden>
 <div class="kid-only" hidden><button type="button" class="btn o kidbtn" onclick="kidm.showModal()">Прочитать родителям</button>
