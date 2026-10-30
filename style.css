@@ -187,4 +187,4 @@ dialog.kidm ol li:before{content:counter(k);width:auto;height:auto;background:no
 .dsign:hover{background:linear-gradient(180deg,#f2dcc0,#c99c70)}.dsign svg{width:20px;height:20px;fill:none;stroke:#120d07;stroke-width:1.6;stroke-linejoin:round}
 
 /* schedule days gold */
-.sched li .gold.gold,.sched h3.gold.gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.sched li .gold.gold,.sched h3.gold.gold,.card.note .gold.gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
