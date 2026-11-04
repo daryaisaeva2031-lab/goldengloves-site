@@ -31,7 +31,7 @@
 <script>(function(){const c=document.getElementById('kidchk'),ok=document.getElementById('kidok'),f=c.form;
 window.kidSet=function(on){c.checked=on;document.querySelectorAll('.kid-only').forEach(e=>e.hidden=!on);ok.required=on;if(!on)ok.checked=false;if(window.kidHook)kidHook(on)};
 c.addEventListener('change',()=>kidSet(c.checked));})();</script>
-<p class="ok" id="ok">Спасибо! Документы подписаны.</p></div></div></section>
+<p class="ok" id="ok">Спасибо! Документы подписаны. Подробности отправили на почту.</p></div></div></section>
 <footer><div class="w"><p class="fl"><a href="about.html">О клубе</a> · <a href="why.html">Почему мы</a> · <a href="promo.html">Акции</a> · <a href="certificate.html">Подарочный сертификат</a> · <a href="faq.html">Частые вопросы</a> · <a href="start.html">Как начать</a></p><p>© 2026 Боксёрский клуб «Золотые перчатки», Пермь · Екатерининская, 105 · <a href="tel:89125962133">8 912 596-21-33</a></p><p>ИП Исаев Кирилл Игоревич · ИНН 143321367396 · ОГРНИП 325595800120306</p>
 <p><a href="oferta.html">Договор-оферта</a> · <a href="privacy.html">Политика конфиденциальности</a> · <a href="consent.html">Согласие на обработку ПД</a> · <a href="refund.html">Правила возврата</a></p></div></footer><script>
 window.kidHook=k=>{tf.querySelectorAll('[data-kid]').forEach(i=>{i.required=k;if(!k)i.value=''})};tf.who.forEach(r=>r.onchange=()=>kidSet(tf.who.value=='Ребёнок'));
