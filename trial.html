@@ -31,7 +31,7 @@ c.addEventListener('change',()=>kidSet(c.checked));})();</script>
 <p><a href="oferta.html">Договор-оферта</a> · <a href="privacy.html">Политика конфиденциальности</a> · <a href="consent.html">Согласие на обработку ПД</a> · <a href="refund.html">Правила возврата</a></p></div></footer><script src="js/api.js"></script><script>
 window.kidHook=k=>{tf.who.value=k?'Ребёнок':'Взрослый';age.style.display=k?'block':'none';tf.age.required=k};tf.who.forEach(r=>r.onchange=()=>kidSet(tf.who.value=='Ребёнок'));
 tf.onsubmit=e=>{e.preventDefault();const data=Object.fromEntries(new FormData(tf));data.page='trial.html';data.oferta=true;data.consent=true;data.kidok=document.getElementById('kidok').checked;
-ggBusy(tf,true);ggSend('/api/trial',data).then(()=>{tf.style.display='none';ok.style.display='block'}).catch(()=>{ggBusy(tf,false);alert('Не удалось отправить. Позвоните нам: 8 912 596-21-33')})};
+ggBusy(tf,true);ggSend('/api/trial',data).then(()=>{tf.style.display='none';ok.style.display='block'}).catch(()=>{ggBusy(tf,false);alert('Не удалось отправить. Попробуйте ещё раз.')})};
 (function(){/* расписание как на schedule.html: 1=Пн … 6=Сб */
 const S={'Взрослый':{1:['08:00','20:00'],3:['08:00','20:00'],5:['08:00','20:00'],2:['20:30'],4:['20:30'],6:['18:00 кроссфит']},
 'Ребёнок':{1:['09:00','18:00'],3:['09:00','18:00'],5:['09:00','18:00'],2:['19:00'],4:['19:00'],6:['18:00 кроссфит']}};
