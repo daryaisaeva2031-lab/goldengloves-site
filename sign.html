@@ -44,4 +44,4 @@ i.addEventListener('input',e=>{if(e.inputType&&e.inputType.startsWith('delete'))
 i.addEventListener('paste',e=>{e.preventDefault();i.value=phFmt(phDigits((e.clipboardData||window.clipboardData).getData('text')));chk()});
 i.addEventListener('blur',()=>{if(i.value)i.value=phFmt(phDigits(i.value));chk()});
 i.addEventListener('invalid',chk);i.form.addEventListener('submit',chk,true)});
-</script><script src="js/api.js?v=20261104c"></script></body></html>
+</script><script src="js/api.js?v=20261104d"></script></body></html>
