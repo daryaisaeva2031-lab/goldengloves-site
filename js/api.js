@@ -1,4 +1,5 @@
-// Адрес бэкенда (Cloudflare Worker). Вписать после деплоя.
-window.API_BASE='https://goldengloves-api.goldengloves59.workers.dev';
-window.ggSend=async function(path,data){if(!API_BASE)throw new Error('no_api');const r=await fetch(API_BASE+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});const j=await r.json().catch(()=>({}));if(!r.ok||!j.ok)throw new Error(j.error||'server');return j};
+// Адрес бэкенда: свой домен, запасной — workers.dev (только при сетевой ошибке, чтобы не было дублей).
+window.API_BASE='https://api.goldengloves59.ru';window.API_ALT='https://goldengloves-api.goldengloves59.workers.dev';
+window.ggLog=function(ep,err,via){const b=JSON.stringify({page:location.pathname,ep:ep,err:String(err).slice(0,60),via:via||''});[API_BASE,API_ALT].forEach(u=>{try{if(!(navigator.sendBeacon&&navigator.sendBeacon(u+'/api/clientlog',new Blob([b],{type:'text/plain'}))))fetch(u+'/api/clientlog',{method:'POST',mode:'no-cors',keepalive:true,headers:{'Content-Type':'text/plain'},body:b}).catch(()=>{})}catch(e){}})};
+window.ggSend=async function(path,data){const body=JSON.stringify(data);let r,via='api';try{r=await fetch(API_BASE+path,{method:'POST',headers:{'Content-Type':'application/json'},body})}catch(e){via='workers.dev';try{r=await fetch(API_ALT+path,{method:'POST',headers:{'Content-Type':'application/json'},body})}catch(e2){ggLog(path,'network '+(e2&&e2.name||''),'both');throw new Error('network')}}const j=await r.json().catch(()=>({}));if(!r.ok||!j.ok){if(r.status>=500||r.status==0)ggLog(path,'HTTP '+r.status+' '+(j.error||''),via);throw new Error(j.error||'server')}return j};
 window.ggBusy=function(f,on){f.querySelectorAll('button[type=submit],button:not([type])').forEach(b=>b.disabled=on)};
