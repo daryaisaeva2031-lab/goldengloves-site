@@ -250,3 +250,7 @@ input[type=checkbox]:not([hidden]){margin:2px 0 0!important}input[type=radio]{ma
 .gplate .lic{flex:none;width:36px;height:36px}
 .gplate b{flex:1;font:18px 'Russo One',sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.2}
 .gplate .arr{flex:none;width:22px;height:22px;stroke:var(--g1);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+.splates{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px}
+.splate{text-align:center;padding:10px 12px;font:600 14px/1.35 'Exo 2',sans-serif;border-radius:12px}
+@media(max-width:700px){.splates{grid-template-columns:1fr}}
