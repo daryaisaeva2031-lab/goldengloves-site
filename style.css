@@ -155,7 +155,7 @@ dialog.kidm ol li:before{content:counter(k);width:auto;height:auto;background:no
 @media(max-width:600px){.doc p,.doc ul{text-align:left}}
 .tcards{align-items:stretch;gap:20px}.tcard{height:100%;box-sizing:border-box}.tcard .th{align-items:flex-start}.tcard .tf{margin-top:auto;padding-top:6px;flex-wrap:nowrap}.tcard .tf>*:first-child{min-width:0}.tcard .tf .btn{flex-shrink:0}
 .tcard .tf:has(.todo){flex-wrap:wrap}
-.tcard .gl{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted,#9a9a9a);margin:4px 0 0;cursor:pointer}.tcard .gl input{width:14px;height:14px;margin:0;accent-color:var(--g1)}
+.tcard .gl{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted,#9a9a9a);margin:4px 0 0;cursor:pointer}.tcard .gl input{width:18px;height:18px;margin:0;accent-color:var(--g1)}
 #glbox[hidden]{display:none!important}
 .why{background:none;border:0;padding:0;margin-left:6px;font:inherit;font-size:12px;color:var(--g1);text-decoration:underline dotted;text-underline-offset:3px;cursor:pointer;white-space:nowrap}
 .whyd{max-width:min(360px,calc(100vw - 32px));padding:22px 22px 18px;background:#141210;color:#eee;border:1px solid var(--g3);border-radius:12px;font-size:14px;line-height:1.5}
@@ -223,3 +223,7 @@ input:focus::placeholder,textarea:focus::placeholder{color:transparent;opacity:0
 .pcard .pb{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}.pcard h3{margin:0;font:20px 'Russo One';color:var(--g1)}.pcard p{margin:0;line-height:1.5;color:#e9e2d6}.pcard .btn{margin-top:auto;align-self:flex-start}
 .pbadge{align-self:flex-start;font:14px 'Russo One';color:#120d07;background:linear-gradient(var(--g1),var(--g2));border-radius:999px;padding:4px 12px}
 .trialcta .tdesc{max-width:720px;margin:0;line-height:1.5;opacity:.9}
+/* единый размер чекбоксов и радиокнопок */
+input[type=checkbox]:not([hidden]),input[type=radio]{width:18px!important;height:18px!important;min-width:18px!important;max-width:18px!important;flex:0 0 18px!important;padding:0!important;border:0!important;background:none!important;border-radius:0;accent-color:var(--g1);box-sizing:border-box;vertical-align:middle}
+input[type=checkbox]:not([hidden]){margin:2px 0 0!important}input[type=radio]{margin:0!important}
+.tcard .gl input[type=checkbox]{margin:0!important}
