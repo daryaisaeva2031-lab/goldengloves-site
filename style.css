@@ -242,3 +242,11 @@ input[type=checkbox]:not([hidden]){margin:2px 0 0!important}input[type=radio]{ma
 .scard.playing .sthumb{background:#000}
 .scard iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0}
 
+/* Галерея — плашки */
+.gplates{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:700px){.gplates{grid-template-columns:1fr}}
+.gplate{display:flex;align-items:center;gap:14px;padding:18px 20px;text-decoration:none;color:#fff;border-radius:16px;border:1px solid var(--wl);background:rgba(10,9,8,.72);transition:border-color .2s,background .2s}
+.gplate:hover,.gplate:focus-visible{border-color:var(--g2);background:rgba(10,9,8,.9);outline:none}
+.gplate .lic{flex:none;width:36px;height:36px}
+.gplate b{flex:1;font:18px 'Russo One',sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.2}
+.gplate .arr{flex:none;width:22px;height:22px;stroke:var(--g1);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
