@@ -27,13 +27,13 @@ function GGCal(inp,o){o=o||{};var min=day(o.min),max=day(o.max),off=o.off||funct
     cal.innerHTML=t+'</div>';var s=cal.querySelectorAll('select');s[0].onchange=function(){m=+this.value;draw()};s[1].onchange=function(){y=+this.value;draw()}}
   function open(){var d=parse(inp.value);if(d){y=d.getFullYear();m=d.getMonth()}cal.hidden=false;draw()}
   function pick(d){inp.value=ru(d);sync();cal.hidden=true;inp.dispatchEvent(new Event('change',{bubbles:true}));if(o.onPick)o.onPick(d)}
-  cal.addEventListener('click',function(e){var b=e.target.closest('button');if(!b||b.disabled)return;e.preventDefault();
+  cal.addEventListener('click',function(e){e.stopPropagation();var b=e.target.closest('button');if(!b||b.disabled)return;e.preventDefault();
     if(b.dataset.n){m+=+b.dataset.n;if(m<0){m=11;y--}if(m>11){m=0;y++}draw()}else if(b.dataset.d)pick(new Date(y,m,+b.dataset.d))});
   inp.addEventListener('click',open);inp.addEventListener('focus',open);
   inp.addEventListener('input',function(){var v=inp.value.replace(/\D/g,'').slice(0,8),s=v.slice(0,2);if(v.length>2)s+='.'+v.slice(2,4);if(v.length>4)s+='.'+v.slice(4);inp.value=s;var d=sync();if(d){y=d.getFullYear();m=d.getMonth();if(!cal.hidden)draw();if(o.onPick)o.onPick(d)}else if(o.onPick&&v.length==8)o.onPick(null)});
   inp.addEventListener('blur',sync);inp.addEventListener('invalid',function(){sync();open()});
   if(inp.form)inp.form.addEventListener('submit',sync,true);
-  document.addEventListener('click',function(e){if(!cal.hidden&&e.target!=inp&&!cal.contains(e.target))cal.hidden=true});
+  document.addEventListener('click',function(e){var p=e.composedPath?e.composedPath():[e.target];if(!cal.hidden&&p.indexOf(inp)<0&&p.indexOf(cal)<0)cal.hidden=true});
   document.addEventListener('keydown',function(e){if(e.key=='Escape')cal.hidden=true});
   return {get:function(){return sync()},redraw:function(){if(!cal.hidden)draw()}}}
 window.GGCal=GGCal;
