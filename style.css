@@ -94,7 +94,7 @@ section.tz{padding:28px 0}
 .banner2{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.banner2>div{flex:1 1 200px}.banner2 h3{margin:0}.banner2 p{margin:4px 0 0;opacity:.8}
 .banner{margin-bottom:18px}
 .gcov{display:block;height:260px;border-radius:16px;border:1px solid var(--wl);background-size:cover;background-position:center 30%}
-.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}.phd{aspect-ratio:4/3;border:1px dashed var(--wl);border-radius:12px;display:grid;place-items:center;opacity:.7}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px}.phd{aspect-ratio:4/3;border:1px dashed rgba(185,138,94,.55);border-radius:12px;display:grid;place-items:center;background:rgba(10,9,8,.55);box-shadow:inset 0 0 24px rgba(168,128,92,.06)}@media(max-width:699px){.gal.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:420px){.gal.grid{grid-template-columns:1fr}}
 .faq{margin-bottom:10px;padding:16px 20px}.faq summary{cursor:pointer;font-weight:600;color:#fff}.faq summary::marker{color:var(--g2)}.faq p{margin:10px 0 0}
 .art{max-width:780px}.art p{font-size:17px}.art .lead{font-size:19px;text-align:center}.ah{font-size:clamp(26px,4vw,40px);color:#fff;text-align:center}.art .rub{text-align:center;display:block}.cov{width:100%;border-radius:16px;margin:10px 0 20px}.ul{padding-left:20px}.ul li{list-style:disc;margin:6px 0}
 .step .big,.feat .big{font:34px 'Russo One';color:var(--g1)}
