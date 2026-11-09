@@ -216,3 +216,4 @@ label.c input[type=checkbox],.kid label.c input[type=checkbox]{flex:0 0 18px!imp
 .card.cinfo b.gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
 #channels .meta{font-size:12px;opacity:.6;margin:10px 0 0}
 .kidm .ed{font-size:13px;opacity:.75;margin:-4px 0 10px}
+#obox[hidden],#freebox[hidden]{display:none!important}
