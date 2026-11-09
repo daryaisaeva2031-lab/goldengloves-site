@@ -257,3 +257,9 @@ input[type=checkbox]:not([hidden]){margin:2px 0 0!important}input[type=radio]{ma
 
 nav a.navx{display:none}
 @media(max-width:900px){nav.open a.navx{display:block}}
+
+.feats{align-items:stretch;gap:10px}
+@media(min-width:600px){.feats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:599px){.feats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.feats .feat{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;box-sizing:border-box;padding:12px 10px;min-height:128px;height:100%;font:13px/1.35 'Exo 2',sans-serif;border-radius:12px}
+.feats .feat .big{font:22px/1.15 'Russo One',sans-serif;color:var(--g1);margin:0 0 6px}
