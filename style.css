@@ -227,3 +227,18 @@ input:focus::placeholder,textarea:focus::placeholder{color:transparent;opacity:0
 input[type=checkbox]:not([hidden]),input[type=radio]{width:18px!important;height:18px!important;min-width:18px!important;max-width:18px!important;flex:0 0 18px!important;padding:0!important;border:0!important;background:none!important;border-radius:0;accent-color:var(--g1);box-sizing:border-box;vertical-align:middle}
 input[type=checkbox]:not([hidden]){margin:2px 0 0!important}input[type=radio]{margin:0!important}
 .tcard .gl input[type=checkbox]{margin:0!important}
+
+/* Жизнь клуба — Shorts */
+.shorts{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 12px;-webkit-overflow-scrolling:touch}
+.shorts::-webkit-scrollbar{height:6px}.shorts::-webkit-scrollbar-thumb{background:var(--g3);border-radius:3px}
+.scard{flex:0 0 168px;scroll-snap-align:start;padding:0;overflow:hidden;cursor:pointer;text-decoration:none;color:#fff;display:flex;flex-direction:column;text-align:left;font:inherit;background:rgba(10,9,8,.82);border:1px solid var(--wl);border-radius:16px}
+@media(min-width:900px){.scard{flex-basis:190px}}
+.scard .sthumb{position:relative;aspect-ratio:9/16;background:#111 center/cover no-repeat}
+.scard .sthumb::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.8));pointer-events:none}
+.scard .play{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);z-index:1;width:52px;height:52px;border-radius:50%;background:rgba(0,0,0,.55);border:2px solid var(--g1);display:grid;place-items:center}
+.scard .play svg{width:22px;height:22px;fill:var(--g1);margin-left:3px}
+.scard .st{padding:10px 12px 12px;font-size:13px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.scard.playing .sthumb::after,.scard.playing .play,.scard.playing .st{display:none}
+.scard.playing .sthumb{background:#000}
+.scard iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:0}
+.shorts:empty::before{content:"Загружаем видео…";display:block;opacity:.6;padding:24px 0;width:100%;text-align:center}
