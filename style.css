@@ -210,3 +210,9 @@ label.c input[type=checkbox],.kid label.c input[type=checkbox]{flex:0 0 18px!imp
 .cert .paybtns .btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;font-size:15px}
 .cert .btn.sbp .sbpi{width:20px;height:23px;flex:none;background:#fff;border-radius:6px;padding:3px 4px;box-sizing:content-box}
 .cert .btn.dk{background:#141210!important;color:#e9e2d6;border:1px solid var(--g2)}
+/* 09.11.2026 */
+.cert .note{font-size:13px;opacity:.7;margin:14px 0 0;text-align:center}
+#pay .pname{font:20px 'Russo One';color:var(--g1);text-align:center;margin:0 0 14px}
+.card.cinfo b.gold{background:linear-gradient(180deg,var(--g1),var(--g2) 55%,var(--g3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+#channels .meta{font-size:12px;opacity:.6;margin:10px 0 0}
+.kidm .ed{font-size:13px;opacity:.75;margin:-4px 0 10px}
