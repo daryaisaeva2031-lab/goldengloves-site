@@ -219,3 +219,7 @@ label.c input[type=checkbox],.kid label.c input[type=checkbox]{flex:0 0 18px!imp
 #obox[hidden],#freebox[hidden]{display:none!important}
 .dp .dps{display:flex;gap:6px}.dp select{background:#1a1816;color:var(--g1);border:1px solid var(--g3);border-radius:8px;padding:6px 8px;font:14px 'Exo 2',sans-serif;width:auto!important;margin:0!important}
 input:focus::placeholder,textarea:focus::placeholder{color:transparent;opacity:0}input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder{color:transparent}input:focus::-moz-placeholder,textarea:focus::-moz-placeholder{color:transparent;opacity:0}
+.promo{align-items:stretch}.pcard{padding:0;overflow:hidden;display:flex;flex-direction:column}.pcard img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.pcard .pb{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}.pcard h3{margin:0;font:20px 'Russo One';color:var(--g1)}.pcard p{margin:0;line-height:1.5;color:#e9e2d6}.pcard .btn{margin-top:auto;align-self:flex-start}
+.pbadge{align-self:flex-start;font:14px 'Russo One';color:#120d07;background:linear-gradient(var(--g1),var(--g2));border-radius:999px;padding:4px 12px}
+.trialcta .tdesc{max-width:720px;margin:0;line-height:1.5;opacity:.9}
