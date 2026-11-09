@@ -33,7 +33,9 @@ function GGCal(inp,o){o=o||{};var min=day(o.min),max=day(o.max),off=o.off||funct
   inp.addEventListener('input',function(){var v=inp.value.replace(/\D/g,'').slice(0,8),s=v.slice(0,2);if(v.length>2)s+='.'+v.slice(2,4);if(v.length>4)s+='.'+v.slice(4);inp.value=s;var d=sync();if(d){y=d.getFullYear();m=d.getMonth();if(!cal.hidden)draw();if(o.onPick)o.onPick(d)}else if(o.onPick&&v.length==8)o.onPick(null)});
   inp.addEventListener('blur',sync);inp.addEventListener('invalid',function(){sync();open()});
   if(inp.form)inp.form.addEventListener('submit',sync,true);
-  document.addEventListener('click',function(e){var p=e.composedPath?e.composedPath():[e.target];if(!cal.hidden&&p.indexOf(inp)<0&&p.indexOf(cal)<0)cal.hidden=true});
+  function outside(e){if(cal.hidden)return;var p=e.composedPath?e.composedPath():[],t=e.target;if(p.indexOf(inp)>=0||p.indexOf(cal)>=0||t==inp||cal.contains(t))return;cal.hidden=true}
+  document.addEventListener(window.PointerEvent?'pointerdown':'touchstart',outside,true);if(!window.PointerEvent)document.addEventListener('mousedown',outside,true);
+  ['pointerdown','mousedown','touchstart'].forEach(function(ev){cal.addEventListener(ev,function(e){e.stopPropagation()})});
   document.addEventListener('keydown',function(e){if(e.key=='Escape')cal.hidden=true});
   return {get:function(){return sync()},redraw:function(){if(!cal.hidden)draw()}}}
 window.GGCal=GGCal;
